@@ -152,24 +152,40 @@
               
                 {{ post.content }}
                 
-        
+        444
                 
               </div>
               <a class="post-author" href="{{ site.base_url }}">
                 {% if post.author %}
                 <img src="{{ post.author.avatar }}" />
+                
+                555
+                
+                
                 {% endif %}
                 <p>
                   {% if post.author %}
                   <span class="post-author-name">{{ post.author.name }}</span>
+                  
+                  666
+                  
+                  
                   {% endif %}
                   <span class="post-date">Posted on {{ post.created_at|format_date }}</span>
+                  
+                  777
+                  
+                  
                 </p>
               </a>
               <div class="dots"><span></span><span></span><span></span></div>
           </div>
           {% endfor %}
         </div>
+        
+        888
+        
+        
 
         {% if not is_tag %}
         {% if pagination.next or pagination.prev %}
@@ -186,6 +202,8 @@
 
         <div class="post-content">
           <h1>{{ post.title }}</h1>
+          999
+          
           <div data-type-cleanup="true">
             {{ post.content }}
             {% if post.type == 'link' or post.type == 'webclip' %}
